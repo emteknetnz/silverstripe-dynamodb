@@ -14,4 +14,5 @@ jobs:
     # Only run cron on the silverstripe account
     if: (github.event_name == 'schedule' && startsWith(github.repository, 'silverstripe/')) || (github.event_name != 'schedule')
     #uses: silverstripe/gha-ci/.github/workflows/ci.yml@v1
-    uses: creative-commoners/gha-ci/.github/workflows/ci.yml@pulls/1/dynamodb
+    #uses: creative-commoners/gha-ci/.github/workflows/ci.yml@pulls/1/dynamodb
+    uses: maxime-rainville/gha-ci/.github/workflows/ci.yml@1
